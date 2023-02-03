@@ -33,16 +33,13 @@ body{
 .container{
     margin: 15px auto;
     padding: 10px 15px;
-    display: flex;
-    align-items: center;
-    justify-content: start;
     font-family: sans-serif;
-    width: 50vw;
+    width: 60%;
 }
 
 li {
-    display: block;
     font-weight: bold;
+    overflow-x: hidden;
 }
 
 .toolbar-item button{
@@ -51,4 +48,13 @@ li {
     border: 1px solid white !important;
     border-radius: 15px !important;
     padding: 5px 14px !important;
-}   
+}
+
+@media screen and (max-width:900px) {
+    .container{
+        width: 80%;
+    }
+    li {
+        overflow-x: scroll;
+    }
+}
